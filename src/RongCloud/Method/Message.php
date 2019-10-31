@@ -415,7 +415,7 @@ class Message extends RongCloud {
      * @throws RongCloudException
      * 2019/4/14 15:09
      */
-    public function recallMessage($fromUserId, $conversationType, $targetId, $messageUID, $sentTime) {
+    public function recallMessage($fromUserId, $conversationType, $targetId, $messageUID, $sentTime, $isDelete = 0) {
         try {
             if(empty($fromUserId)) {
                 throw new RongCloudException('消息发送人用户 Id 不能为空');
@@ -447,6 +447,7 @@ class Message extends RongCloud {
                 'targetId'         => $targetId,
                 'messageUID'       => $messageUID,
                 'sentTime'         => $sentTime,
+                'isDelete'         => $isDelete,
             ];
 
             $ret = $this->curl('/message/recall', $params, 'urlencoded', 'im', 'POST');
