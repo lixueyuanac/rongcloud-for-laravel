@@ -1,0 +1,38 @@
+{
+    "name": "huangkem/rongcloud-for-laravel",
+    "description": "基于融云服务端sdk封装成laravel5包",
+    "keywords": [
+        "php",
+	"laravel",
+	"laravel5",
+        "rongc",
+	"rongcloud",
+	"sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huangkem",
+            "email": "huangkem@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+	"psr-4": {
+	    "RongCloud\\": "src/RongCloud"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RongCloud\\ServiceProvider"
+            ],
+            "aliases": {
+                "RongCloud": "RongCloud\\Facades\\RongCloud"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
