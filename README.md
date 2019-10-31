@@ -1,4 +1,4 @@
-# rongcloud-for-laravel
+
 基于融云服务端sdk封装成laravel5包
 # 推荐使用composer安装
 ```
@@ -45,3 +45,4 @@ composer require huangkem/rongcloud-for-laravel
 融云API错误信息参考：[https://www.rongcloud.cn/docs/server.html#api](https://www.rongcloud.cn/docs/server.html#api)  
 
 官方sdk地址：[https://github.com/rongcloud/server-sdk-php-composer](https://github.com/rongcloud/server-sdk-php-composer)
+
